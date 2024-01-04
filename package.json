@@ -1,8 +1,8 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "org-inc-backend",
   "private": true,
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "description": "Backend app of Org Inc by Nestjs, TypeScript, PostgreSQL, WebSocket and Redis",
   "license": "MIT",
   "scripts": {
     "build": "nest build",
@@ -22,6 +22,9 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/platform-socket.io": "^10.3.0",
+    "@nestjs/websockets": "^10.3.0",
+    "hbs": "^4.2.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
