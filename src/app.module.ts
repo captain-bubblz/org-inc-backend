@@ -1,11 +1,16 @@
-import { Module, NestModule, MiddlewareConsumer, RequestMethod } from '@nestjs/common';
+import {
+  Module,
+  // NestModule,
+  // MiddlewareConsumer,
+  // RequestMethod,
+} from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { NotificationGateway } from './notification/notification.gateway';
+import { SocketGateway } from './socket/socket.gateway';
 
 @Module({
   imports: [],
   controllers: [AppController],
-  providers: [AppService, NotificationGateway], 
+  providers: [AppService, SocketGateway],
 })
 export class AppModule {}
